@@ -7,7 +7,7 @@ lazy val root = (project in file(".")).
     name := "$name$-root"
   )
 
-lazy val $name$App = (project in file("$name$")).
+lazy val $name$App = (project in file("$name;format="lower"$")).
   settings(
     name := "$name$"
   )
