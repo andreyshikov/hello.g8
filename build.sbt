@@ -1,5 +1,5 @@
 lazy val root = (project in file(".")).
-  aggregate(app).
+  aggregate($name$).
   settings(inThisBuild(List(
       organization := "com.example",
       scalaVersion := "$scala_version$"
@@ -7,7 +7,7 @@ lazy val root = (project in file(".")).
     name := "$name$-root"
   )
 
-lazy val app = (project in file("app")).
+lazy val app = (project in file("$name$")).
   settings(
     name := "$name$"
   )
